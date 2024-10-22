@@ -89,5 +89,34 @@ video{
     z-index: 4;
     position: absolute;
     top: 100px;
-    right: 20px;
+    right: 50px;
+}
+
+.soundOff{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content-modal{
+    background-color: #181818;
+    margin: 30px auto;
+    padding: 20px;
+    width: 60%;
+    color: white;
 }
