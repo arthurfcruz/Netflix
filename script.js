@@ -3,6 +3,7 @@ let soundOff = document.querySelector(".soundOff")
 let video = document.querySelector(".video")
 let infoButton = document.querySelector(".linkinfo")
 let modal = document.querySelector(".modal")
+let audio = document.querySelector(".audio")
 
 soundButton.addEventListener("click", soundOn)
 soundOff.addEventListener("click", soundMuted)
@@ -24,4 +25,10 @@ function showInfo(){
 
 function hideInfo(){
     modal.style.display = "none"
+}
+
+window.addEventListener("load", playAudio)
+
+function playAudio(){
+    audio.play()
 }
